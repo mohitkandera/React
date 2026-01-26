@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
+=======
+venv/
+node_modules/
+__pycache__/
+db.sqlite3
+.env
+*.pyc
+
+>>>>>>> 112316246dbf208bb80ef2bc63091ccd2b45dd69

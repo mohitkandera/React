@@ -6,6 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+<<<<<<< HEAD
 const HandleClickIncrement = () => {
   setCount(count+1)
 }
@@ -33,6 +34,37 @@ const HandleClickDecrement =() => {
 
  
   </>
+=======
+  const alertMsg =() => {
+    alert ("button clicked")
+  }
+  const handleMouse = () => {
+    console.log("mouse over event triggered")
+  }
+  function handleChange(e){
+    console.log("value till now  is ", e.target.value)
+  }
+
+ const handleSubmit = () => {
+    console.log("Form Submitted")
+    alert ("form submitted")
+
+ }
+
+  return (
+    <>
+    <h1>Event Handling</h1>
+    <p onMouseOver={handleMouse}>I am a Para</p>
+    <button onClick={alertMsg}>ALERT</button>
+
+<hr />
+<br />
+  <form onSubmit={handleSubmit}>
+       <input type="text" onChange={handleChange} />
+      <button >submit</button>
+  </form> 
+    </>
+>>>>>>> 112316246dbf208bb80ef2bc63091ccd2b45dd69
   )
 }
 
